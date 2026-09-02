@@ -1,22 +1,79 @@
 <!DOCTYPE html>
-<!-- Entrgable 2-->
- <!-- Este desarrollo web e diseñado por ALEJANDRO RIVERA -->
-<!-- Doctype indica que el tipo de documento es html-->
+<!-- Doctype indica que el tipo de documento es HTML -->
 <html lang="es">
-    <!--lang indica que el documento esta en español-->
+<!--Lang esta indicado que es español-->
 <head>
-    <!--Dentro de head van las configuraciones de la app o del sitio web-->
+    <!--Dentro del Head van las configuraciones de la app o sitio web -->
     <meta charset="UTF-8">
-    <!-- esta meta dato permite todos los caracteres especiales-->
+
+
+    <!--este meta dato permite todos los caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alejandro Rivera">
-    <!-- este meta dato viewport es para que se adapten a cualquier pantalla-->
-    <title>RXXXXXXX</title>
-    <!-- El titulo es como voy aparecer en la webb-->
+    <!--El meta dato de viewport es para que se adapte a cualquier pantalla-->
+    <meta name="author" content="Cesar Chavez">
+    <title>MECANICA</title>
+    <!--El titulo como voy a aparecer en la web-->
     <link rel="stylesheet" href="css/styles.css">
-    <!--Link rel enlaza con la carpeta y el archivo del css-->
+    <!--link rel enlaza con la carpeta y el archivo del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
 </head>
 <body>
-    </body>
-    </html>
+    <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="img/logo.png" alt="Logo de Mecanica" height="70" />
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#Inicio">inicio</a></li>
+          <li><a href="#Servicios">Servicios</a></li>
+          <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a class="Contacto" href="#donar">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!--AQUI INICIA EL FOOTER-->
+<footer>
+
+  <div class="footer-social">
+    <div class="container social-icons">
+
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://x.com/" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      &copy; <span id="anio"></span> DEL NORTH CAPS
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+  </html>
