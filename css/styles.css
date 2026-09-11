@@ -147,29 +147,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* SECCIÓN INICIO / HERO */
-.hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
-    padding: 6rem 0 3rem;
-    text-align: center;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.hero-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 /* Stats */
 .stats-grid {
     display: flex;
