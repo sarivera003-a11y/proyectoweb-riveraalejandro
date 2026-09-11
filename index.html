@@ -1,193 +1,200 @@
 <!DOCTYPE html>
-<!-- Doctype indica que el tipo de documento es HTML -->
 <html lang="es">
-<!--Lang esta indicado que es español-->
 <head>
-    <!--Dentro del Head van las configuraciones de la app o sitio web -->
     <meta charset="UTF-8">
-
-
-    <!--este meta dato permite todos los caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--El meta dato de viewport es para que se adapte a cualquier pantalla-->
-    <meta name="author" content="Cesar Chavez">
-    <title>MECANICA</title>
-    <!--El titulo como voy a aparecer en la web-->
+    <meta name="author" content="Alejandro Rivera">
+    <title>Elite Chocolate</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!--link rel enlaza con la carpeta y el archivo del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shadows+Into+Light&family=Slabo+13px&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        <img src="img/logo.jpg" alt="Logo de Mecanica" height="70" />
-      </a>
-      <nav class="main-nav" id="mainNav">
-        <ul>
-          <li><a href="#Inicio">inicio</a></li>
-          <li><a href="#Servicios">Servicios</a></li>
-          <li><a href="#Nosotros">Nosotros</a></li>
-          <li><a class="Contacto" href="#donar">Contacto</a></li>
-        </ul>
-      </nav>
-      <button id="menuToggle" class="menu-toggle">☰</button>
-    </div>
-  </header>
-
-<!-- AQUÍ INICIA EL MAIN   -->
-  <main>
-    <!-- HERO con video -->
-    <!--section class="hero video-hero"-->
-      <!--<video class="hero-video" id="heroVideo" autoplay loop playsinline>
-        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>-->
-
-      <!-- estos son los botones que estan dentro del VIDEO-->
-
-     
-    </section> <!--Fin hero y cierra las estadísticas y todo-->
-
-    <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS / PRODUCTOS ETC -->
-    <section id="lanzamientos" class="carousel-section container">
-      <h2>Nuevos Lanzamientos</h2>
-      <div class="carousel" id="carousel">
-        <div class="carousel-track" id="carouselTrack">
-          <div class="carousel-slide">
-            <img src="img/consultoria.jpg" alt="Consultorías TechIY">
-            <p class="carousel-caption">Consultorías</p>
-          </div>
-
-
-
-          <div class="carousel-slide">
-            <img src="img/child.jpg" alt="Talleres TechIY">
-            <p class="carousel-caption">Talleres</p>
-          </div>
-          <div class="carousel-slide">
-            <img src="img/img2.jpg" alt="Asesorías TechIY">
-            <p class="carousel-caption">Asesorías</p>
-          </div>
-        </div>
-
-<div class="hero-content container">
-        <div class="hero-actions">
-          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Ver Maquillaje</a>
-          <a class="btn outline" href="#Tutoriales">Ver tutoriales</a>
+        <div class="container header-inner">
+            <a class="logo" href="#inicio">
+                <img src="img/logo.jpg" alt="Logo de Elite Chocolate" height="70" />
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a class="btn-dona" href="#donar">Donar</a></li>
+                </ul>
+            </nav>
+            <button id="menuToggle" class="menu-toggle" aria-label="Menú">☰</button>
         </div>
-<!-- Esta tarjeta es pra colocar estadisticas y la clase de stat es para colocar datos-->
-                <div class="stats-grid">
-          <div class="stat">
-            <div class="stat-number">+1.500</div>
-            <div class="stat-label">Productos de Belleza.</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+20.000</div>
-            <div class="stat-label">Looks creados</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+300</div>
-            <div class="stat-label">Productos Maquillaje</div>
-          </div>
+    </header>
+
+    <!-- SECCIÓN INICIO -->
+    <main id="inicio">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-actions">
+                        <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Ver Beneficios</a>
+                        <a class="btn outline" href="#servicios">Ver Productos</a>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">+5</div>
+                            <div class="stat-label">Productos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+2</div>
+                            <div class="stat-label">Sabores creados</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+1,000</div>
+                            <div class="stat-label">Clientes satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SERVICIOS / CARRUSEL -->
+        <section id="servicios" class="carousel-section container">
+            <h2>Nuevos Lanzamientos</h2>
+            <div class="carousel" id="carousel">
+                
+                <!-- BOTONES Y ESTADÍSTICAS ENCIMA DE LAS IMÁGENES -->
+                <div class="hero-content">
+                    <div class="hero-actions">
+                        <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Ver Beneficios</a>
+                        <a class="btn outline" href="#servicios">Ver Productos</a>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">+5</div>
+                            <div class="stat-label">Productos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+2</div>
+                            <div class="stat-label">Sabores creados</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+1,000</div>
+                            <div class="stat-label">Clientes satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="img/consultorias.jpg" alt="Consultorías Elite Chocolate">
+                        <p class="carousel-caption">Consultorías</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/talleres.jpg" alt="Talleres Elite Chocolate">
+                        <p class="carousel-caption">Talleres</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/asesorias.jpg" alt="Asesorías Elite Chocolate">
+                        <p class="carousel-caption">Asesorías</p>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="projects container">
+            <h2>Elite Chocolate</h2>
+            <p class="lead">Llevamos calidad a diferentes regiones. Explora algunos de nuestros proyectos:</p>
+            <div class="project-cards">
+                <article class="card">
+                    <div class="card-img" id="antioquia-caucasia"></div>
+                    <div class="card-body">
+                        <h3>Productos</h3>
+                        <p>Deliciosos chocolates elaborados con ingredientes de calidad y diferentes sabores para disfrutar en cualquier ocasión.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" id="guajira"></div>
+                    <div class="card-body">
+                        <h3>Regalos</h3>
+                        <p>Sorprende a tus seres queridos con nuestros chocolates, ideales para cumpleaños, aniversarios, celebraciones y momentos especiales.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" id="cordoba"></div>
+                    <div class="card-body">
+                        <h3>Nuestra Calidad</h3>
+                        <p>Nos esforzamos por ofrecer chocolates frescos, deliciosos y preparados con dedicación para brindarte una experiencia única.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="newsletter">
+            <div class="container newsletter-inner">
+                <div>
+                    <h2>¡No te pierdas lo último!</h2>
+                    <p>Suscríbete para recibir noticias y promociones.</p>
+                </div>
+                <form id="subscribeForm" class="subscribe-form" novalidate>
+                    <input id="email" type="email" placeholder="tu@email.com" required />
+                    <button class="btn primary" type="submit">Suscribirme</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <address>
+                    <p>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/mqoUmqWgxTWgYweP8" target="_blank" rel="noreferrer noopener">
+                            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> Plaza Satélite
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5519224580"> 55 1922 4580</a>
+                    </p>
+                </address>
+            </div>
+
+            <div class="footer-social">
+                <div class="container social-icons">
+                    <a href="https://www.facebook.com/elitechocolate" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elitechocolate" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@elitechocolate" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/elitechocolate" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/elitechocolate" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-
-        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
-        <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
-
-        <div class="carousel-dots" id="carouselDots"></div>
-      </div>
-    </section>
-    <!-- FIN CARRUSEL -->
-
-    <section id="proyectos" class="projects container">
-      <h2>Elite Chocolate</h2>
-      <p class="lead">Llevamos calidad a diferentes regiones. Explora algunos de nuestros proyectos:</p>
-
-      <div class="project-cards">
-        <article class="card">
-          <div class="card-img" id="antioquia-caucasia"></div>
-          <div class="card-body">
-            <h3>Productos</h3>
-            <p>Deliciosos chocolates elaborados con ingredientes de calidad y diferentes sabores para disfrutar en cualquier ocasión.</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-img" id="guajira"></div>
-          <div class="card-body">
-            <h3>Regalos</h3>
-            <p>Detalles especiales:
-              Sorprende a tus seres queridos con nuestros chocolates, ideales para cumpleaños, aniversarios, celebraciones y momentos especiales.</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-img" id="cordoba"></div>
-          <div class="card-body">
-            <h3>Córdoba — Tierra Alta</h3>
-            <p>Escuelas y centros de aprendizaje fortalecidos para los niños y niñas</aside> de 
-              familias agricultoras.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contacto" class="newsletter">
-      <div class="container newsletter-inner">
-        <div>
-          <h2>¡No te pierdas lo último!</h2>
-          <p>Suscríbete para recibir noticias e historias.</p>
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; <span id="anio"></span> ELITE CHOCOLATE
+            </div>
         </div>
-        <form id="subscribeForm" class="subscribe-form" novalidate>
-          <input id="email" type="email" placeholder="Tu correo electrónico" required />
-          <button class="btn primary" type="submit">Suscribirme</button>
-        </form>
-        <div id="formMessage" class="form-message"></div>
-      </div>
-    </section>
-  </main>
+    </footer>
 
-
-  <!--AQUI INICIA EL FOOTER-->
-<footer>
-
-  <div class="footer-social">
-    <div class="container social-icons">
-
-      <a href="https://www.facebook.com/" aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-
-      <a href="https://www.instagram.com/" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="https://www.youtube.com/" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-
-      <a href="https://x.com/" aria-label="X (Twitter)">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="container">
-      &copy; <span id="anio"></span> DEL NORTH CAPS
-    </div>
-  </div>
-
-</footer>
-
-
+    <script src="JS/script.js"></script>
 </body>
-  </html>
+</html>
